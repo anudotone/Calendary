@@ -26,22 +26,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 // Current month's dates
                 for (let i = 1; i <= lastDay; i++) {
-                    const dayDiv = document.createElement('div');
-                    dayDiv.textContent = i;
-                    if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
-                        dayDiv.classList.add('today');
-                    }
-                    daysContainer.appendChild(dayDiv);
-                }
-                // Next month's dates
-                const nextMonthStartDay = 7 - new Date(year, month + 1, 0).getDay() - 1;
-                for (let i = 1; i <= nextMonthStartDay; i++) {
-                    const dayDiv = document.createElement('div');
-                    dayDiv.textContent = i;
-                    dayDiv.classList.add('fade');
-                    daysContainer.appendChild(dayDiv);
-                }
-            }
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = i;
+                if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                dayDiv.classList.add('today');
+               }
+                daysContainer.appendChild(dayDiv);
+               }
+
+                // Next month's dates (Move the calculations here!)
+                const totalSlots = 42;
+                const currentSlotsUsed = firstDay + lastDay;
+                const nextMonthDaysNeeded = totalSlots - currentSlotsUsed;
+                for (let i = 1; i <= nextMonthDaysNeeded; i++) {
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = i;
+                dayDiv.classList.add('fade');
+                daysContainer.appendChild(dayDiv);
+               }
+               }
+
             prevButton.addEventListener('click', function () {
                 currentDate.setMonth(currentDate.getMonth() - 1);
                 renderCalendar(currentDate);
