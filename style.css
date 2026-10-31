@@ -1,6 +1,6 @@
 body {
             font-family: Arial, sans-serif;
-            display: grid;
+            display: flex;
             place-items: center;
             height: 100vh;
             margin: 0;
@@ -35,7 +35,7 @@ body {
             flex-wrap: wrap;
         }
         .days {
-            min-height: 210px;
+            height: 240px;
         }
         .weekdays div, .days div {
             width: 14.28%;
