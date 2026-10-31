@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const firstDay = new Date(year, month, 1).getDay();
         const lastDay = new Date(year, month + 1, 0).getDate();
         
-        // Update selectors to show the currently viewing month and year
+        // selectors to show the currently viewing month and year
         monthSelect.value = month;
         yearSelect.value = year;
         
