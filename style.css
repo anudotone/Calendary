@@ -37,7 +37,7 @@ body {
 /* Container for the dropdown menus */
 .selection-controls {
     display: flex;
-    gap: 5px;
+    gap: 15px;
 }
 
 .selection-controls select {
