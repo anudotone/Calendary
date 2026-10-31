@@ -1,60 +1,100 @@
 body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            place-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #333333;
-            justify-content: center;
-            align-items: center;
-        }
-        .calendar {
-            background-color: #111111;
-            border-radius: 10px;
-            box-shadow: 0 0 30px #222222;
-            overflow: hidden;
-            width: 300px;
-            color: white;
-            padding: 20px;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-        .btn {
-            cursor: pointer;
-        }
-        #month-year {
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .weekdays, .days {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .days {
-            height: 240px;
-        }
-        .weekdays div, .days div {
-            width: 14.28%;
-            text-align: center;
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-        .days div {
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .days div:hover {
-            background-color: white;
-            color: orangered;
-        }
-        .days .today {
-            background-color: orangered;
-            color: white;
-        }
-        .days .fade {
-            color: #555;
-        }
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333333; /* Keeps your main background dark so the pink pops! */
+}
+
+.calendar {
+    background-color: #FFD1DC; /* Black -> Baby Light Pink */
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    color: #333333; /* Dark text so it is readable on light pink */
+    padding: 20px;
+    height: 380px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    color: #4A154B; /* Dark purple arrows to match theme */
+}
+
+/* Container for the dropdown menus */
+.selection-controls {
+    display: flex;
+    gap: 5px;
+}
+
+/* Light pastel theme styling for selection dropdowns */
+.selection-controls select {
+    background-color: #FFF0F5; /* Lavender blush input background */
+    color: #4A154B; /* Dark Purple text color */
+    border: 1px solid #E0B0FF;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.selection-controls select:focus {
+    border-color: #4A154B; /* Dark Purple focus line */
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days {
+    height: 240px;
+}
+
+.weekdays div, .days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.weekdays div {
+    font-weight: bold;
+    color: #4A154B; /* Dark Purple labels */
+}
+
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.days div:hover {
+    background-color: #4A154B; /* Orange -> Dark Purple on hover */
+    color: white;
+}
+
+.days .today {
+    background-color: #4A154B; /* Orange -> Dark Purple */
+    color: white;
+}
+
+.days .fade {
+    color: #A0C4DF; /* Gray -> Lightest Baby Blue */
+}
+
