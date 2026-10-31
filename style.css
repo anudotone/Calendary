@@ -9,9 +9,9 @@ body {
 }
 
 .calendar {
-    background-color: #FFD1DC;
+    background-color: #FFF0F2; 
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
     color: #333333; 
@@ -41,10 +41,10 @@ body {
 }
 
 .selection-controls select {
-    background-color: #FFF0F5;
-    color: #4A154B;
-    border: 1px solid #E0B0FF;
-    padding: 5px;
+    background-color: #F3EDF8; 
+    color: #4A154B; 
+    border: 1px solid #E6D8F2; 
+    padding: 5px 15px 5px 10px; 
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
