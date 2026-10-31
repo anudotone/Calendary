@@ -5,16 +5,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #333333; /* Keeps your main background dark so the pink pops! */
+    background-color: #333333;
 }
 
 .calendar {
-    background-color: #FFD1DC; /* Black -> Baby Light Pink */
+    background-color: #FFD1DC;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 300px;
-    color: #333333; /* Dark text so it is readable on light pink */
+    color: #333333; 
     padding: 20px;
     height: 380px; 
     display: flex;
@@ -31,7 +31,7 @@ body {
 
 .btn {
     cursor: pointer;
-    color: #4A154B; /* Dark purple arrows to match theme */
+    color: #4A154B; 
 }
 
 /* Container for the dropdown menus */
@@ -40,10 +40,9 @@ body {
     gap: 5px;
 }
 
-/* Light pastel theme styling for selection dropdowns */
 .selection-controls select {
-    background-color: #FFF0F5; /* Lavender blush input background */
-    color: #4A154B; /* Dark Purple text color */
+    background-color: #FFF0F5;
+    color: #4A154B;
     border: 1px solid #E0B0FF;
     padding: 5px;
     border-radius: 5px;
@@ -54,7 +53,7 @@ body {
 }
 
 .selection-controls select:focus {
-    border-color: #4A154B; /* Dark Purple focus line */
+    border-color: #4A154B;
 }
 
 .weekdays, .days {
@@ -75,7 +74,7 @@ body {
 
 .weekdays div {
     font-weight: bold;
-    color: #4A154B; /* Dark Purple labels */
+    color: #4A154B;
 }
 
 .days div {
@@ -85,16 +84,16 @@ body {
 }
 
 .days div:hover {
-    background-color: #4A154B; /* Orange -> Dark Purple on hover */
+    background-color: #4A154B;
     color: white;
 }
 
 .days .today {
-    background-color: #4A154B; /* Orange -> Dark Purple */
+    background-color: #4A154B;
     color: white;
 }
 
 .days .fade {
-    color: #A0C4DF; /* Gray -> Lightest Baby Blue */
+    color: #A0C4DF;
 }
 
