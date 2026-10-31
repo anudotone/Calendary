@@ -31,7 +31,7 @@ body {
 
 .btn {
     cursor: pointer;
-    color: #9C8EB9; 
+    color: #8765CE; 
 }
 
 /* Container for the dropdown menus */
@@ -74,7 +74,7 @@ body {
 
 .weekdays div {
     font-weight: bold;
-    color: #9C8EB9;
+    color: #8765CE;
 }
 
 .days div {
@@ -84,12 +84,12 @@ body {
 }
 
 .days div:hover {
-    background-color: #9C8EB9;
+    background-color: #8765CE;
     color: white;
 }
 
 .days .today {
-    background-color: #9C8EB9;
+    background-color: #8765CE;
     color: white;
 }
 
