@@ -5,6 +5,8 @@ body {
             height: 100vh;
             margin: 0;
             background-color: #333333;
+            justify-content: center;
+            align-items: center;
         }
         .calendar {
             background-color: #111111;
@@ -33,7 +35,7 @@ body {
             flex-wrap: wrap;
         }
         .days {
-            height: 210px;
+            min-height: 210px;
         }
         .weekdays div, .days div {
             width: 14.28%;
