@@ -5,16 +5,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #333333;
+    background-color: #595959;
 }
 
 .calendar {
-    background-color: #FFF0F2; 
+    background-color: #F7dae7; 
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
-    color: #333333; 
+    color: #595959; 
     padding: 20px;
     height: 380px; 
     display: flex;
@@ -31,7 +31,7 @@ body {
 
 .btn {
     cursor: pointer;
-    color: #4A154B; 
+    color: #C47AC5; 
 }
 
 /* Container for the dropdown menus */
@@ -42,7 +42,7 @@ body {
 
 .selection-controls select {
     background-color: #F3EDF8; 
-    color: #4A154B; 
+    color: #C47AC5; 
     border: 1px solid #E6D8F2; 
     padding: 5px 15px 5px 10px; 
     border-radius: 5px;
@@ -53,7 +53,7 @@ body {
 }
 
 .selection-controls select:focus {
-    border-color: #4A154B;
+    border-color: #C47AC5;
 }
 
 .weekdays, .days {
@@ -74,7 +74,7 @@ body {
 
 .weekdays div {
     font-weight: bold;
-    color: #4A154B;
+    color: #C47AC5;
 }
 
 .days div {
@@ -84,12 +84,12 @@ body {
 }
 
 .days div:hover {
-    background-color: #4A154B;
+    background-color: #C47AC5;
     color: white;
 }
 
 .days .today {
-    background-color: #4A154B;
+    background-color: #C47AC5;
     color: white;
 }
 
